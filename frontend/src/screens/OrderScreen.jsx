@@ -60,11 +60,6 @@ const OrderScreen = () => {
       }
     })
   }
-  async function onApproveTest() {
-    await payOrder({orderId, details: {payer: {} }});
-    refetch(); // because we want the red to change to green
-    toast.success('Payment Successful');
-  }
 
 
   function onError(err) {
@@ -198,14 +193,9 @@ const OrderScreen = () => {
                       {loadingPay && <Loader />}
 
                       {isPending ? <Loader /> : (
-                        <div>
-                          <Button onClick={onApproveTest} style={{marginBottom: '10px'}}>
-                          Test Pay Order
-                          </Button>
                           <div>
                             <PayPalButtons createOrder={createOrder} onApprove={onApprove} onError={onError}></PayPalButtons>
                           </div>
-                        </div>
                       )}
                     </ListGroup.Item>
                   )}
