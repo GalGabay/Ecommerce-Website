@@ -5,7 +5,6 @@ import cookieParser from 'cookie-parser';
 dotenv.config();
 import connectDB from './config/db.js';
 import products from './data/products.js';
-import { dot } from 'node:test/reporters';
 import { connect } from 'node:http2';
 import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
