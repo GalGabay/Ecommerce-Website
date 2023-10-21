@@ -10,7 +10,7 @@ const ProductCarousel = () => {
 
 
   return (
-    isLoading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : ( 
+    error ? <Message variant='danger'>{error}</Message> : ( 
         <>  
         <h1 className='carousel-text'>Hot Products</h1>   
         <Carousel pause='hover' className='bg-primary mb-4'>
@@ -25,7 +25,8 @@ const ProductCarousel = () => {
                     </Link>
                 </Carousel.Item>
             ))}
-        </Carousel></> 
+        </Carousel>
+        </> 
     )
   )
 }
