@@ -5,7 +5,7 @@ main {
 }
 
 
-{/* this is the color of the logo(Gal-s shop)*/}
+/* this is the color of the logo(Gal-s shop)*/
 .brand-name {
   color: #9A4444; 
   font-size: 2rem;
@@ -56,9 +56,9 @@ table th {
 .carousel-caption {
  
   width: 50%;
-  left: 643px;
+  left: 590px;
   right: 0;
-  bottom: 100px;
+  bottom: 130px;
   
 }
 
